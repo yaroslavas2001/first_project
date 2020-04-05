@@ -59,6 +59,7 @@ body{
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  box-sizing: border-box;
 }
 .title-main{
   font-size: 56px;
@@ -104,6 +105,13 @@ body{
   justify-content: flex-start;
   align-items: center;
 }
+.services_img{
+  flex-basis: 120px;
+  text-align: center;
+}
+.services_text{
+  flex-basis: calc(100%-120px);
+}
 .services h3{
   font-style: 28px;
   font-weight: 400;
@@ -112,4 +120,34 @@ body{
   font-size: 14px;
   color: #b2b2b2;
   line-height: 1.5;
+}
+.clients{
+  display: grid;
+  grid-template: repeat(2,1fr) / repeat(4,25%);
+  grid-row-gap: 40px;
+  text-align: center;
+}
+.team{
+  display: grid;
+  grid-template: repeat(3,1fr)/repeat(3,33%);
+  grid-row-gap: 40px;
+}
+.team-item{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+}
+.team-item img{
+  margin-right: 20px;
+}
+.team-item > div{
+  flex-basis: calc(100%-100px);
+}
+.footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  background-color: #f7f7f7;
+  
 }
